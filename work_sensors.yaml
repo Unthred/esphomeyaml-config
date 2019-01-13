@@ -1,0 +1,8 @@
+mqtt_broker: !secret mqtt_broker
+mqtt_username: 'SquiggleyMqtt'
+mqtt_password: 'DangerMqtt42'
+
+work_ssid: 'No Internet Access'
+work_ssid_password: 'MikIsADonkey'
+work_gateway: 192.168.13.254
+work_subnet: 255.255.255.0
