@@ -8,13 +8,13 @@ esphomeyaml:
 wifi:
   ssid: $work_ssid
   password: $work_ssid_password
-  manual_ip:
+  #manual_ip:
     # Set this to the IP of the ESP
-    static_ip: 192.168.13.134
+    #static_ip: 192.168.13.134
     # Set this to the IP address of the router. Often ends with .2
-    gateway: $work_gateway
+    #gateway: $work_gateway
     # The subnet of the network. 255.255.255.0 works for most home networks.
-    subnet: $work_subnet
+    #subnet: $work_subnet
 
 mqtt:
   broker: $mqtt_broker

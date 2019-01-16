@@ -1,0 +1,16 @@
+esphomeyaml:
+  name: office_thermostat_one
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: 'ZGuest'
+  password: 'innovation'
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

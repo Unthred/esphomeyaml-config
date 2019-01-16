@@ -1,23 +1,25 @@
+substitutions: !include work_sensors.yaml
+  
 esphomeyaml:
   name: office_thermostat_one
   platform: ESP8266
   board: nodemcuv2
 
 wifi:
-  ssid: 'No Internet Access'
-  password: 'MikIsADonkey'
-  manual_ip:
+  ssid: $work_ssid
+  password: $work_ssid_password
+  #manual_ip:
     # Set this to the IP of the ESP
-    static_ip: 192.168.13.131
-    # Set this to the IP address of the router. Often ends with .1
-    gateway: 192.168.13.254
+    #static_ip: 192.168.13.132
+    # Set this to the IP address of the router. Often ends with .2
+    #gateway: $work_gateway
     # The subnet of the network. 255.255.255.0 works for most home networks.
-    subnet: 255.255.255.0  
+    #subnet: $work_subnet
 
 mqtt:
-  broker: '192.168.13.1'
-  username: 'SquiggleyMqtt'
-  password: 'DangerMqtt42'
+  broker: $mqtt_broker
+  username: $mqtt_username
+  password: $mqtt_password
 
 # Enable logging
 logger:
@@ -29,6 +31,7 @@ dallas:
 
 # Individual sensors
 sensor:
-  - platform: dallas
-    address: 0xFA02131B147EAA28
-    name: "Office Thermostat One"
+- platform: dallas
+  address: 0xFA02131B147EAA28
+  name: "Office Thermostat One"
+

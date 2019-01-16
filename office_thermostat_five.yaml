@@ -1,9 +1,9 @@
 substitutions: !include work_sensors.yaml
   
 esphomeyaml:
-  name: office_thermostat_two
+  name: office_thermostat_five
   platform: ESP8266
-  board: nodemcuv2
+  board: esp12e
 
 wifi:
   ssid: $work_ssid
@@ -27,11 +27,11 @@ logger:
 ota:
 
 dallas:
-  - pin: D4
+  - pin: GPIO2
 
 # Individual sensors
 sensor:
-  - platform: dallas
-    address: 0x6A02131B575EAA28
-    name: "Office Thermostat Two"
+- platform: dallas
+  address: 0x3002131BFF9FAA28
+  name: "Office Thermostat Five"
 

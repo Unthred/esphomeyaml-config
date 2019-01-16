@@ -1,0 +1,14 @@
+{
+  "use_legacy_ota": false, 
+  "arduino_version": null, 
+  "esphomelib_version": null, 
+  "esphomeyaml_version": "1.10.0", 
+  "address": "office_thermostat_one.local", 
+  "storage_version": 1, 
+  "build_path": null, 
+  "name": "office_thermostat_one", 
+  "firmware_bin_path": null, 
+  "board": "esp01_1m", 
+  "esp_platform": "ESP8266", 
+  "src_version": 1
+}
